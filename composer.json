@@ -1,0 +1,26 @@
+{
+    "name": "ruma/crud-kit",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Ruma\\CrudKit\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kamrun Nahar Ruma"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ruma\\CrudKit\\CrudKitServiceProvider"
+            ],
+            "aliases": {
+                "CrudKit": "Ruma\\LaravelCrudKit\\CrudKit"
+            }
+        }
+    }
+}
