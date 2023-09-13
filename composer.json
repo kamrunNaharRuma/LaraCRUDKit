@@ -14,6 +14,7 @@
     "minimum-stability": "dev-main",
     "require": {},
     "extra": {
+        "class": "Ruma\\CrudKit\\CrudKitPlugin",
         "laravel": {
             "providers": [
                 "Ruma\\CrudKit\\CrudKitServiceProvider"
