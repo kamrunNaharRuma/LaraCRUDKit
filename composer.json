@@ -12,7 +12,9 @@
         }
     ],
     "minimum-stability": "dev-main",
-    "require": {},
+    "require": {
+        "composer-plugin-api": "^1.0" 
+    },
     "extra": {
         "class": "Ruma\\CrudKit\\CrudKitPlugin",
         "laravel": {
