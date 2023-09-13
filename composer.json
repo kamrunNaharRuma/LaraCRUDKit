@@ -11,7 +11,7 @@
             "name": "Kamrun Nahar Ruma"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "dev-main",
     "require": {
         "composer-plugin-api": "^2.3"
     },
