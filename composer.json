@@ -16,7 +16,7 @@
         "composer-plugin-api": "^2.0" 
     },
     "extra": {
-        "class": "Ruma\\CrudKit\\CrudKitPlugin",
+        "class": "Ruma\\CrudKit\\CrudKit",
         "laravel": {
             "providers": [
                 "Ruma\\CrudKit\\CrudKitServiceProvider"
