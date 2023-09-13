@@ -13,7 +13,7 @@
     ],
     "minimum-stability": "dev-main",
     "require": {
-        "composer-plugin-api": "^2.0" 
+ 
     },
     "extra": {
         "class": "Ruma\\CrudKit\\CrudKit",
