@@ -11,7 +11,7 @@
             "name": "Kamrun Nahar Ruma"
         }
     ],
-    "minimum-stability": "dev-main",
+    "minimum-stability": "stable",
     "require": {},
     "extra": {
         "laravel": {
