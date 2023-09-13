@@ -17,3 +17,25 @@ Once you have configured the package in your composer.json and app.php file, you
 
 Replace "Class" with the name of your model (e.g., User, Product, etc.) and provide an array of field names (e.g., ["department","section", "no_of_students"]) that you want to include.
 
+
+# Configuration
+open your laravel project
+
+1. in your composer.json file add     
+"require": {
+        "ruma/crud-kit": "dev-main"
+    },
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kamrunNaharRuma/LaraCRUDKit.git"
+        }
+    ]
+
+2. now run composer require ruma/crud-kit:dev-main
+
+3. after successfull installation of the project , it is time to test. before excutation don't forget to add 
+    'providers' => [ Ruma\CrudKit\CrudKitServiceProvider::class,] and 
+     'aliases' => [ 'CrudKit' => Ruma\CrudKit\CrudKit::class] in app.php file
+
+
