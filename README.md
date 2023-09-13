@@ -11,6 +11,8 @@ The package will perform the following actions:
 # Usage
 Once you have configured the package in your composer.json and app.php file, you can use it. Here's how you can do it in your project:
 
+```use Ruma\CrudKit\CrudKit;```
+
 ```$createCrud = new CrudKit();```
 
 ```$createCrud->generateAllComponents("Class", ["department","section", "no_of_students"]); ```
