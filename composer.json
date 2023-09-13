@@ -12,7 +12,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "composer-plugin-api": "^2.3"
+    },
     "extra": {
         "laravel": {
             "providers": [
