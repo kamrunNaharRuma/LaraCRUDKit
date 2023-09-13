@@ -1,6 +1,6 @@
 {
     "name": "ruma/crud-kit",
-    "type": "composer-plugin",
+
     "autoload": {
         "psr-4": {
             "Ruma\\CrudKit\\": "src/"
@@ -13,10 +13,8 @@
     ],
     "minimum-stability": "dev-main",
     "require": {
-        "composer-plugin-api": "^2.3"
     },
     "extra": {
-        "class": "Ruma\\CrudKit\\CrudKit",
         "laravel": {
             "providers": [
                 "Ruma\\CrudKit\\CrudKitServiceProvider"
