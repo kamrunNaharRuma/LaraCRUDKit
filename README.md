@@ -1,4 +1,4 @@
-**CrudKit: Effortless CRUD Generation for Laravel**
+**CrudKit: Your All-in-One Laravel Scaffold Generator**
 
 Unleash the power of rapid development with **CrudKit**, a Laravel package designed to automate and simplify the creation of essential CRUD components. With a single command, CrudKit generates migration files, models, controllers, views, routes, and form validation—all tailored to your specified model. Say goodbye to repetitive coding and let CrudKit handle the heavy lifting!
 
