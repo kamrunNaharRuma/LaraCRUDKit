@@ -1,43 +1,25 @@
-# LaraCRUDKit
-The package will perform the following actions:
+**CrudKit: Effortless CRUD Generation for Laravel**
 
-1. Generate a migration file with the specified name.
-2. Create a model for the given model name and fillable properties using model stub.
-3. Generate a controller with CRUD function with form validation request using controller stub.
-4. Create views for index, create, edit, and show files.
-5. Add resource route for CRUD operations in the routes file.
-6. Generate form validation request class for each model class.
+Unleash the power of rapid development with **CrudKit**, a Laravel package designed to automate and simplify the creation of essential CRUD components. With a single command, CrudKit generates migration files, models, controllers, views, routes, and form validation—all tailored to your specified model. Say goodbye to repetitive coding and let CrudKit handle the heavy lifting!
 
-# Usage
-Once you have configured the package in your composer.json and app.php file, you can use it. Here's how you can do it in your project:
+### Features
+- **Automatic Migration Generation**: Instantly create migration files for database tables.
+- **Dynamic Model Creation**: Models are generated with fillable properties, ready for use.
+- **Comprehensive Controllers**: Each controller includes CRUD functions with built-in form validation.
+- **Customizable Views**: Get index, create, edit, and show views generated right out of the box.
+- **Seamless Route Integration**: Resource routes for CRUD operations are automatically added.
+- **Form Validation Requests**: Ensures form data integrity for each model, with validation rules built in.
 
-```use Ruma\CrudKit\CrudKit;```
+### Usage
+Once CrudKit is configured in your `composer.json` and `app.php`, invoke it like so:
 
-```$createCrud = new CrudKit();```
+```php
+use Ruma\CrudKit\CrudKit;
 
-```$createCrud->generateAllComponents("Class", ["department","section", "no_of_students"]); ```
+$createCrud = new CrudKit();
+$createCrud->generateAllComponents("YourModelName", ["field1", "field2", "field3"]);
+```
 
-Replace "Class" with the name of your model (e.g., User, Product, etc.) and provide an array of field names (e.g., ["department","section", "no_of_students"]) that you want to include.
+Simply replace `"YourModelName"` with the desired model (e.g., `User`, `Product`) and provide an array of fields to be included. CrudKit handles the rest, providing a full suite of components in seconds.
 
-
-# Configuration
-open your laravel project
-
-1. in your composer.json file add     
-"require": {
-        "ruma/crud-kit": "dev-main"
-    },
-  "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/kamrunNaharRuma/LaraCRUDKit.git"
-        }
-    ]
-
-2. now run composer require ruma/crud-kit:dev-main
-
-3. after successfull installation of the project , it is time to test. before excutation don't forget to add 
-    'providers' => [ Ruma\CrudKit\CrudKitServiceProvider::class,] and 
-     'aliases' => [ 'CrudKit' => Ruma\CrudKit\CrudKit::class] in app.php file
-
-
+Elevate your Laravel development with **CrudKit**—your shortcut to robust, standardized, and scalable CRUD operations!
